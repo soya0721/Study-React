@@ -12,7 +12,7 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
-export function Links() {
+export function Links(props) {
   return (
         <main className={styles.main}>
           <Image
@@ -25,7 +25,7 @@ export function Links() {
           />
           <ol>
             <li>
-              Get started by editing <code>pages/index.js</code>.
+              Get started by editing <code>/{props.pages}.js</code>.
             </li>
             <li>Save and see your changes instantly.</li>
             <li>enjoy.</li>
