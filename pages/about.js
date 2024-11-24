@@ -1,8 +1,5 @@
-
-import Image from "next/image";
 import localFont from "next/font/local";
 import styles from "@/styles/Home.module.css";
-import Link from "next/link";
 import { Links } from "@/components/Links";
 import { Footer } from "@/components/Footer";
 import { Headline } from "@/components/Headline";
@@ -21,11 +18,13 @@ const geistMono = localFont({
 export default function Home() {
   return (
     <>
-      <Headline title="About Page!!!"/>
+      <Headline title="About Page!!!" />
       <div
         className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}
       >
-        <Links pages="about"/>
+        <Links pages="about">
+        <div>propsで持ってきた</div>
+        </Links>
         <Footer />
       </div>
     </>

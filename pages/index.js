@@ -1,5 +1,3 @@
-import Head from "next/head";
-import Image from "next/image";
 import localFont from "next/font/local";
 import styles from "@/styles/Home.module.css";
 import { Footer } from "@/components/Footer";
@@ -24,7 +22,9 @@ export default function Home() {
       <div
         className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}
       >
-        <Links pages="indexになってる？"/>
+        <Links pages="indexになってる？" >
+        <div>indexのほうでもpropsでもってきた</div>
+        </Links>
         <Footer />
       </div>
     </>

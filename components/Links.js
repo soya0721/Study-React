@@ -29,6 +29,7 @@ export function Links(props) {
             </li>
             <li>Save and see your changes instantly.</li>
             <li>enjoy.</li>
+            <li>{props.children}</li>
           </ol>
 
           <div className={styles.ctas}>
