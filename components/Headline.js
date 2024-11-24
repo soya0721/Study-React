@@ -1,8 +1,5 @@
 import Head from "next/head";
 
-
-
-
 export function Headline(props) {
   return (
     <>
