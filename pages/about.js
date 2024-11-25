@@ -1,5 +1,5 @@
 import localFont from "next/font/local";
-import styles from "@/styles/Home.module.css";
+import classes from "@/styles/Home.module.css";
 import { Links } from "@/components/Links";
 import { Footer } from "@/components/Footer";
 import { Headline } from "@/components/Headline";
@@ -20,7 +20,7 @@ export default function Home() {
     <>
       <Headline title="About Page!!!" />
       <div
-        className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}
+        className={`${classes.page} ${geistSans.variable} ${geistMono.variable}`}
       >
         <Links pages="about">
         <div>propsで持ってきた</div>

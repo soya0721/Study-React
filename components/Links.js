@@ -1,7 +1,6 @@
 import Image from "next/image";
 import localFont from "next/font/local";
-import styles from "@/styles/Home.module.css";
-
+import classes from "@/components/Links.module.css";
 const geistSans = localFont({
   src: "../pages/fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -14,9 +13,9 @@ const geistMono = localFont({
 });
 export function Links(props) {
   return (
-        <main className={styles.main}>
+        <main className={classes.main}>
           <Image
-            className={styles.logo}
+            className={classes.logo}
             src="/next.svg"
             alt="Next.js logo"
             width={180}
@@ -32,15 +31,15 @@ export function Links(props) {
             <li>{props.children}</li>
           </ol>
 
-          <div className={styles.ctas}>
+          <div className={classes.ctas}>
             <a
-              className={styles.primary}
+              className={classes.primary}
               href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
               target="_blank"
               rel="noopener noreferrer"
             >
               <Image
-                className={styles.logo}
+                className={classes.logo}
                 src="/vercel.svg"
                 alt="Vercel logomark"
                 width={20}
@@ -52,7 +51,7 @@ export function Links(props) {
               href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
               target="_blank"
               rel="noopener noreferrer"
-              className={styles.secondary}
+              className={classes.secondary}
             >
               Read our docs
             </a>
