@@ -3,6 +3,7 @@ import classes from "@/styles/Home.module.css";
 import { Links } from "@/components/Links";
 import { Footer } from "@/components/Footer";
 import { Headline } from "@/components/Headline";
+import { Header } from "@/components/Header";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -22,6 +23,7 @@ export default function Home() {
       <div
         className={`${classes.page} ${geistSans.variable} ${geistMono.variable}`}
       >
+        <Header />
         <Links pages="about">
         <div>propsで持ってきた</div>
         </Links>
