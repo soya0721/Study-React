@@ -4,6 +4,7 @@ import { Footer } from "../components/Footer";
 import { Links } from "../components/Links/Links";
 import { Headline } from "../components/Headline";
 import { Header } from "../components/Head/Header";
+import React,{ useCallback, useEffect} from "react";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -17,6 +18,12 @@ const geistMono = localFont({
 });
 
 export default function Home() {
+  useEffect(() => {
+    document.body.style.backgroundColor = 'lightblue';
+    return ()=> {
+      document.body.style.backgroundColor = "";
+    }
+  }, []);
   return (
     <>
       <Headline title="Index Page"/>
